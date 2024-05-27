@@ -1,0 +1,59 @@
+@media (max-width: 40em) {
+  nav {
+    flex-direction: column;
+    justify-content: start;
+
+    gap: 1rem;
+
+    .location {
+      display: none;
+    }
+  }
+
+  #container {
+    max-width: 95vw;
+    margin-inline: auto;
+    margin-block: 2rem;
+  }
+  /* --------------------------------------------------------------------- */
+
+  #detail-product {
+    grid-template-columns: repeat(1, 1fr);
+
+    text-align: center;
+
+    gap: 1rem;
+
+    .image {
+      position: relative;
+
+      img {
+        width: unset;
+        height: 40vh;
+      }
+    }
+
+    .content {
+      h1.name {
+        font-size: x-large;
+        margin-bottom: 0;
+      }
+
+      .price {
+        letter-spacing: 7px;
+        font-weight: bolder;
+        font-size: small;
+
+        margin-bottom: 1.25rem;
+      }
+
+      .buttons {
+        justify-content: center;
+
+        button {
+          font-size: small;
+        }
+      }
+    }
+  }
+}
